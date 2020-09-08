@@ -1,0 +1,275 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "page": 1,
+            "per_page": 6,
+            "total": 12,
+            "total_pages": 2,
+            "data": [
+                {
+                    "id": 1,
+                    "name": "cerulean",
+                    "year": 2000,
+                    "color": "#98B2D1",
+                    "pantone_value": "15-4020"
+                },
+                {
+                    "id": 2,
+                    "name": "fuchsia rose",
+                    "year": 2001,
+                    "color": "#C74375",
+                    "pantone_value": "17-2031"
+                },
+                {
+                    "id": 3,
+                    "name": "true red",
+                    "year": 2002,
+                    "color": "#BF1932",
+                    "pantone_value": "19-1664"
+                },
+                {
+                    "id": 4,
+                    "name": "aqua sky",
+                    "year": 2003,
+                    "color": "#7BC4C4",
+                    "pantone_value": "14-4811"
+                },
+                {
+                    "id": 5,
+                    "name": "tigerlily",
+                    "year": 2004,
+                    "color": "#E2583E",
+                    "pantone_value": "17-1456"
+                },
+                {
+                    "id": 6,
+                    "name": "blue turquoise",
+                    "year": 2005,
+                    "color": "#53B0AE",
+                    "pantone_value": "15-5217"
+                }
+            ],
+            "ad": {
+                "company": "StatusCode Weekly",
+                "url": "http://statuscode.org/",
+                "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
+            }
+        }
+    ],
+    "required": [
+        "page",
+        "per_page",
+        "total",
+        "total_pages",
+        "data",
+        "ad"
+    ],
+    "properties": {
+        "page": {
+            "$id": "#/properties/page",
+            "type": "integer",
+            "title": "The page schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "per_page": {
+            "$id": "#/properties/per_page",
+            "type": "integer",
+            "title": "The per_page schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                6
+            ]
+        },
+        "total": {
+            "$id": "#/properties/total",
+            "type": "integer",
+            "title": "The total schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                12
+            ]
+        },
+        "total_pages": {
+            "$id": "#/properties/total_pages",
+            "type": "integer",
+            "title": "The total_pages schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                2
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "array",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "id": 1,
+                        "name": "cerulean",
+                        "year": 2000,
+                        "color": "#98B2D1",
+                        "pantone_value": "15-4020"
+                    },
+                    {
+                        "id": 2,
+                        "name": "fuchsia rose",
+                        "year": 2001,
+                        "color": "#C74375",
+                        "pantone_value": "17-2031"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/data/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/data/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "id": 1,
+                                "name": "cerulean",
+                                "year": 2000,
+                                "color": "#98B2D1",
+                                "pantone_value": "15-4020"
+                            }
+                        ],
+                        "required": [
+                            "id",
+                            "name",
+                            "year",
+                            "color",
+                            "pantone_value"
+                        ],
+                        "properties": {
+                            "id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/id",
+                                "type": "integer",
+                                "title": "The id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "cerulean"
+                                ]
+                            },
+                            "year": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/year",
+                                "type": "integer",
+                                "title": "The year schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    2000
+                                ]
+                            },
+                            "color": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/color",
+                                "type": "string",
+                                "title": "The color schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "#98B2D1"
+                                ]
+                            },
+                            "pantone_value": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/pantone_value",
+                                "type": "string",
+                                "title": "The pantone_value schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "15-4020"
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "ad": {
+            "$id": "#/properties/ad",
+            "type": "object",
+            "title": "The ad schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "company": "StatusCode Weekly",
+                    "url": "http://statuscode.org/",
+                    "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
+                }
+            ],
+            "required": [
+                "company",
+                "url",
+                "text"
+            ],
+            "properties": {
+                "company": {
+                    "$id": "#/properties/ad/properties/company",
+                    "type": "string",
+                    "title": "The company schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "StatusCode Weekly"
+                    ]
+                },
+                "url": {
+                    "$id": "#/properties/ad/properties/url",
+                    "type": "string",
+                    "title": "The url schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "http://statuscode.org/"
+                    ]
+                },
+                "text": {
+                    "$id": "#/properties/ad/properties/text",
+                    "type": "string",
+                    "title": "The text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
