@@ -40,12 +40,46 @@ public class ReqRes extends Utilities {
 	}
 
 	@Given("inputs for {string} are fetched from {string} of {string}")
-	public void inputs_for_are_fetched_from_of(String TCID, String sheet, String path) throws Exception {
-		Map<String, String> TestDataInMap = getTestDataInMap(path, sheet, TCID);
+	public void inputs_for_are_fetched_from_of(String TCID, String dataSource, String path) throws Exception {
+		
+		if(dataSource=="Sheet1") {
+		Map<String, String> TestDataInMap = getTestDataInMap(path,dataSource,TCID);
 		if (resourceAPI.getResource().equalsIgnoreCase("/users")) {
 			request.body(payload.userPayload(TestDataInMap.get("Name"), TestDataInMap.get("Job")));
 		}
+		else if(dataSource=="DB"){
+			Map<String, String> TestDataFromDB = getTestDataFromDB();
+			if (resourceAPI.getResource().equalsIgnoreCase("/users")) {
+				request.body(payload.userPayload(TestDataFromDB.get("Name"), TestDataFromDB.get("Job")));
+		}
+		}
 	}
+		
+	}
+	
+	/*@Given("inputs for {string} are fetched from {string}")
+	    public void inputs_for_something_are_fetched_from_something(String TCID, String DataSource) throws Throwable {
+		
+		if(DataSource=="Sheet1") {
+			System.out.println("Inside sheet");
+			System.out.println("kjabdfkabakfbak");
+			Map<String, String> TestDataInMap = TEST(DataSource, TCID);
+			if (resourceAPI.getResource().equalsIgnoreCase("/users")) {
+				request.body(payload.userPayload(TestDataInMap.get("Name"), TestDataInMap.get("Job")));
+			}
+		}
+		else if(DataSource=="DB") {
+			System.out.println("Inside DB");
+			Map<String, String> TestDataInMap = getTestDataFromDB();
+			if (resourceAPI.getResource().equalsIgnoreCase("/users")) {
+				System.out.println(TestDataInMap.get("Name"));
+				System.out.println(TestDataInMap.get("Job"));
+				request.body(payload.userPayload(TestDataInMap.get("Name"), TestDataInMap.get("Job")));
+			}
+		}
+		
+		
+	    }*/
 
 	@When("Method is {string} type is {string} with parameter {string} and value as {string}")
 	public void method_is_type_is_with_parameter_and_value_as(String method, String type, String parameter,
@@ -100,3 +134,11 @@ public class ReqRes extends Utilities {
 
 	}
 }
+
+
+/*Scenario Outline: Test to verify if we are able to post data to "Users" resource by fetching input from excel
+Given I make a call to "Users" of "ReqRes" API
+And inputs for "<TCID>" are fetched from "Sheet1" of "Users.xlsx"
+And inputs for "<TCID>" are fetched from "Sample" of "DEMOTrial"
+When Method is "Post"
+Then response has status code as 201*/

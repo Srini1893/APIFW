@@ -1,0 +1,96 @@
+Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 Created
+Date: Thu, 10 Sep 2020 10:11:53 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 51
+Connection: keep-alive
+Set-Cookie: __cfduid=deabdf869f9825e60d11156ab1215854d1599732713; expires=Sat, 10-Oct-20 10:11:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"33-JfLX0HqBUTsn6uTgdX0lmCYhurE"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 0519191ec900001a5a97298200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5d085e114f891a5a-SIN
+
+{
+    "id": "314",
+    "createdAt": "2020-09-10T10:11:53.435Z"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 Created
+Date: Thu, 10 Sep 2020 10:11:54 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 50
+Connection: keep-alive
+Set-Cookie: __cfduid=d3cc138477e795974eff51e6df76131c51599732714; expires=Sat, 10-Oct-20 10:11:54 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"32-oLymh5CjwMI23z3MKOFYABExdRc"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 051919245600001a5a97320200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5d085e1a2ad81a5a-SIN
+
+{
+    "id": "14",
+    "createdAt": "2020-09-10T10:11:54.855Z"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 Created
+Date: Thu, 10 Sep 2020 10:11:56 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 51
+Connection: keep-alive
+Set-Cookie: __cfduid=d84b74da97a81ae5a6d71f3f784c488ae1599732715; expires=Sat, 10-Oct-20 10:11:55 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"33-Dh3OFqwjH/tPOHvemgNuIYoXH7Q"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 051919294300001a5a9739c200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5d085e220af81a5a-SIN
+
+{
+    "id": "601",
+    "createdAt": "2020-09-10T10:11:56.104Z"
+}

@@ -1,8 +1,5 @@
 package resources;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import pojos.Users;
 
 public class TestDataBuild {

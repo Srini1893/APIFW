@@ -1,5 +1,5 @@
 Feature: Validating the API's in ReqRes
-
+  
   Scenario: Test to verify "Users" resource return success with query parameter
     Given I make a call to "Users" of "ReqRes" API
     When Method is "Get" type is "query" with parameter "page" and value as "2"
@@ -46,10 +46,10 @@ Feature: Validating the API's in ReqRes
       | Joseph  | Lead    |
       | Clement | Manager |
 
-  @Regression
+  @sanity
   Scenario Outline: Test to verify if we are able to post data to "Users" resource by fetching input from excel
     Given I make a call to "Users" of "ReqRes" API
-    And inputs for "<TCID>" are fetched from "Sheet1" of "Users.xlsx"
+    And inputs for "<TCID>" are fetched from "Sheet1" of "Users.xlsx" 
     When Method is "Post"
     Then response has status code as 201
 

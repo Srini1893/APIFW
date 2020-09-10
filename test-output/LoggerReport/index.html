@@ -51,14 +51,6 @@
 							</a>
 						</li>
 						<li>
-							<a href="exception.html">
-							<span class="nav-icon">
-							<i class="fa fa-warning"></i>
-							</span>
-							<span class="nav-text">Exceptions</span>
-							</a>
-						</li>
-						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -103,11 +95,11 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
-										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
+										
+										
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -120,7 +112,7 @@
 								        </span>
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">@Regression</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@sanity</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -137,32 +129,39 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="fail">
-											<div class="st fail test l0" 
+											<div class="tsc" status="pass">
+											<div class="st pass test l0" 
 												tags=""
 												devices="">
-												<span class="tt">09.08.2020 10:25:57</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">09.08.2020 19:54:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">[Validating the API's in ReqRes] started</span>
 												
 											</div>
 											<div class="st pass test l1" 
-												tags=""
+												tags="@sanity"
 												devices="">
-												<span class="tt">09.08.2020 10:25:57</span>&nbsp;
+												<span class="tt">09.08.2020 19:54:34</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">|---[Test to verify "Users" resource return success with query parameter] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @sanity</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
 												
 											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">09.08.2020 10:25:57</span>&nbsp;
+												<span class="tt">09.08.2020 19:54:34</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API] started</span>
 												
 												<div class="st pass">
-													<span class="tt">09.08.2020 10:25:58</span>&nbsp;
+													<span class="tt">09.08.2020 19:54:35</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API]</span>
 													
@@ -172,12 +171,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">09.08.2020 10:25:58</span>&nbsp;
+												<span class="tt">09.08.2020 19:54:35</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get" type is "query" with parameter "page" and value as "2"] started</span>
 												
 												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:01</span>&nbsp;
+													<span class="tt">09.08.2020 19:54:38</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get" type is "query" with parameter "page" and value as "2"]</span>
 													
@@ -187,12 +186,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">09.08.2020 10:26:01</span>&nbsp;
+												<span class="tt">09.08.2020 19:54:38</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 200] started</span>
 												
 												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:01</span>&nbsp;
+													<span class="tt">09.08.2020 19:54:38</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 200]</span>
 													
@@ -202,12 +201,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">09.08.2020 10:26:01</span>&nbsp;
+												<span class="tt">09.08.2020 19:54:38</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "per_page" in response body is 6] started</span>
 												
 												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:02</span>&nbsp;
+													<span class="tt">09.08.2020 19:54:39</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "per_page" in response body is 6]</span>
 													
@@ -217,12 +216,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">09.08.2020 10:26:02</span>&nbsp;
+												<span class="tt">09.08.2020 19:54:39</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "total" in response body is 12] started</span>
 												
 												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:02</span>&nbsp;
+													<span class="tt">09.08.2020 19:54:39</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "total" in response body is 12]</span>
 													
@@ -232,759 +231,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">09.08.2020 10:26:02</span>&nbsp;
+												<span class="tt">09.08.2020 19:54:39</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "data[0].email" in response body is "michael.lawson@reqres.in"] started</span>
 												
 												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:02</span>&nbsp;
+													<span class="tt">09.08.2020 19:54:39</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "data[0].email" in response body is "michael.lawson@reqres.in"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l1" 
-												tags="@Regression"
-												devices="">
-												<span class="tt">09.08.2020 10:26:02</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Test to verify "Users" resource return success with path parameter] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Regression</span>
-												</span>
-												<span class="author-list">
-												</span>
-												<span class="device-list">
-												</span>
-												
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:02</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:02</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:02</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get" type is "path" with parameter "users" and value as "2"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get" type is "path" with parameter "users" and value as "2"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 200] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 200]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "data.id" in response body is 2] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "data.id" in response body is 2]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "ad.company" in response body is "StatusCode Weekly"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And "ad.company" in response body is "StatusCode Weekly"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l1" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Test for an error scenario] started</span>
-												
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get" type is "path" with parameter "users" and value as "23"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get" type is "path" with parameter "users" and value as "23"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 404] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 404]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l1" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Test to verify "Unknown" resource return success] started</span>
-												
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Unknown" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Unknown" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 200] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 200]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And schema matches "TestSchema"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And schema matches "TestSchema"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st fail test l1" 
-												tags="@Regression"
-												devices="">
-												<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">|---[Test to verify "Unknown" resource return success and is in sync with json in file] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Regression</span>
-												</span>
-												<span class="author-list">
-												</span>
-												<span class="device-list">
-												</span>
-												
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Unknown" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Unknown" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get" type is "path" with parameter "unknown" and value as "2"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Get" type is "path" with parameter "unknown" and value as "2"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st fail test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 404] started</span>
-												
-												<div class="st fail">
-													<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 404]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.AssertionError: expected:<404> but was:<200>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepDefinition.ReqRes.response_has_status_code_as(ReqRes.java:77)
-	at ?.response has status code as 404(file:///C:/Users/wi20022508/eclipse-workspace/APIFrameworkDemo/src/test/java/features/ReqRes.feature:34)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st skip test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And json matches with "Matching.json"] started</span>
-												
-												<div class="st skip">
-													<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And json matches with "Matching.json"]</span>
-													
-													<span class="td">Step skipped</span>
-												</div>
-											</div>
-											<div class="st pass test l1" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Test to verify "Users" resource return success when method is "Post"] started</span>
-												
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Test to verify "Users" resource return success when method is "Post"] started</span>
-												
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs are "Wilfred" and "QA"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs are "Wilfred" and "QA"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Test to verify "Users" resource return success when method is "Post"] started</span>
-												
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs are "Joseph" and "Lead"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs are "Joseph" and "Lead"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:05</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:06</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:06</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:06</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:06</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Test to verify "Users" resource return success when method is "Post"] started</span>
-												
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:06</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:06</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:06</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs are "Clement" and "Manager"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:06</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs are "Clement" and "Manager"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:06</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:07</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:07</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:07</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l1" 
-												tags="@Regression"
-												devices="">
-												<span class="tt">09.08.2020 10:26:07</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Test to verify if we are able to post data to "Users" resource by fetching input from excel] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Regression</span>
-												</span>
-												<span class="author-list">
-												</span>
-												<span class="device-list">
-												</span>
-												
-											</div>
-											<div class="st pass test l2" 
-												tags="@Regression"
-												devices="">
-												<span class="tt">09.08.2020 10:26:07</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Test to verify if we are able to post data to "Users" resource by fetching input from excel] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Regression</span>
-												</span>
-												<span class="author-list">
-												</span>
-												<span class="device-list">
-												</span>
-												
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:07</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:07</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:07</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs for "TC_01" are fetched from "Sheet1" of "Users.xlsx"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs for "TC_01" are fetched from "Sheet1" of "Users.xlsx"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags="@Regression"
-												devices="">
-												<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Test to verify if we are able to post data to "Users" resource by fetching input from excel] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Regression</span>
-												</span>
-												<span class="author-list">
-												</span>
-												<span class="device-list">
-												</span>
-												
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs for "TC_03" are fetched from "Sheet1" of "Users.xlsx"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs for "TC_03" are fetched from "Sheet1" of "Users.xlsx"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:08</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:09</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:09</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:09</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags="@Regression"
-												devices="">
-												<span class="tt">09.08.2020 10:26:09</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Test to verify if we are able to post data to "Users" resource by fetching input from excel] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Regression</span>
-												</span>
-												<span class="author-list">
-												</span>
-												<span class="device-list">
-												</span>
-												
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:09</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:09</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I make a call to "Users" of "ReqRes" API]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:09</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs for "TC_02" are fetched from "Sheet1" of "Users.xlsx"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:09</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And inputs for "TC_02" are fetched from "Sheet1" of "Users.xlsx"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:09</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:10</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Method is "Post"]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">09.08.2020 10:26:10</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201] started</span>
-												
-												<div class="st pass">
-													<span class="tt">09.08.2020 10:26:10</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then response has status code as 201]</span>
 													
 													<span class="td"></span>
 												</div>
